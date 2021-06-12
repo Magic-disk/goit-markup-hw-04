@@ -370,26 +370,9 @@ img {
 .team-item {
   padding: 30px 32px;
 }
-
-.list-item li:not(:last-child) {
-  margin-right: 30px;
-}
-.list-item {
+/* .list-item {
   margin-top: 30px;
   margin-bottom: 30px;
-}
-.team .scorecard {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-/* .list-item .team-item {
-  padding-top: 30px;
-  padding-bottom: 16px;
-} */
-/* .team-icons {
-  display: inline-flex;
-  justify-content: space-between;
 } */
 .team-icons-list {
   /* margin: 0 auto; */
@@ -412,7 +395,7 @@ img {
   justify-content: center;
   align-items: center;
   background-color: inherit;
-  fill: var(--company-social-color);
+
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -424,11 +407,12 @@ img {
 }
 .team-link {
   display: inline-flex;
+  fill: var(--company-color)
 }
 .team-svg {
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
+;
 }
 .team-worker {
   font-family: Roboto;
@@ -438,8 +422,7 @@ img {
   line-height: 1.188;
   color: var(--title-color);
   text-align: center;
-  padding-bottom: 10px;
-  padding-top: 30px;
+  margin-bottom: 10px;
 }
 .team-text {
   font-family: Roboto;
@@ -451,6 +434,7 @@ img {
 }
 
 /* clients */
+
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -458,6 +442,7 @@ img {
 .clients-list {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 .clients-title {
   font-family: Roboto;
@@ -476,14 +461,29 @@ img {
   align-items: center;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
-  border-radius: 4px;
+  
+}
+.clients-item:hover,
+.clients-item:hover svg,
+.clients-item:focus {
+  fill: var(--color-logo-links);
+  
+}
+.clients-link:hover, 
+.clients-link:focus {
+  outline: 1px solid var(--color-logo-links);
+  fill: var(--color-logo-links) 
+  }
+
+
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
-}
-/* .clients-item {
-  width: 170px;
-  height: 92;
-} */
+  }
 
 .clients-item:not(:last-child) {
   margin-right: 30px;
@@ -493,24 +493,42 @@ img {
   height: 60px;
   align-items: center;
   margin: 16px 32px;
+  border: none;
+  fill: #afb1b8;
 }
 .clients-icon {
   fill: var(--company-color);
 }
+/* .clients-icon:hover,
+.clients-icon:focus {
+  fill: var(--color-logo-links); */
+}
+
+
+
+.team-link:hover,
+.team-link:focus {
+  fill: var(--white-color);
+  background-color: var(--color-logo-links);
+}
 /* подвал */
+
 .footer {
   background-color: var(--hero-footer-background);
 }
-.footer {
+
+.footer .container {
+  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  width: 231px;
+  margin-right: 70px;
+}
 .footer .logo {
-  font-family: Raleway;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.192;
-  letter-spacing: 0.03em;
   color: var(--white-color);
   display: inline-block;
   margin-bottom: 20px;
@@ -532,7 +550,7 @@ img {
   letter-spacing: 0.03em;
   margin-top: 9px;
 }
-.contacts {
+.address {
   font-weight: normal;
   font-style: normal;
   font-size: 14px;
@@ -553,4 +571,50 @@ img {
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--footer-contacts-color);
+}
+.social-svg {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  fill: var(--white-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.social-svg:hover,
+.social-svg:focus {
+  fill: var(--white-color);
+  background-color: var(--color-logo-links);
+}
+.social {
+  width: 20px;
+  height: 20px;
+}
+.join {
+  display: flex;
+  justify-content: center;
+}
+.join-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.join-list .list-social {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-social:not(:last-child) {
+  margin-right: 10px;
+}
+.join-list .list-social {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
