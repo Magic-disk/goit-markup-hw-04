@@ -407,12 +407,11 @@ img {
 }
 .team-link {
   display: inline-flex;
-  fill: var(--company-color)
+  fill: var(--company-color);
 }
 .team-svg {
   width: 20px;
   height: 20px;
-;
 }
 .team-worker {
   font-family: Roboto;
@@ -441,7 +440,7 @@ img {
 }
 .clients-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .clients-title {
@@ -461,29 +460,21 @@ img {
   align-items: center;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
-  
 }
-.clients-item:hover,
-.clients-item:hover svg,
-.clients-item:focus {
-  fill: var(--color-logo-links);
-  
-}
-.clients-link:hover, 
+.clients-link:hover,
 .clients-link:focus {
-  outline: 1px solid var(--color-logo-links);
-  fill: var(--color-logo-links) 
-  }
-
-
-
+  border: 1px solid var(--color-logo-links);
+  fill: var(--color-logo-links);
+}
 .clients-link {
   display: flex;
   justify-content: center;
   align-items: center;
+  fill: var(--company-color);
   width: 170px;
   height: 92px;
-  }
+  border: 1px solid #afb1b8;
+}
 
 .clients-item:not(:last-child) {
   margin-right: 30px;
@@ -494,17 +485,7 @@ img {
   align-items: center;
   margin: 16px 32px;
   border: none;
-  fill: #afb1b8;
 }
-.clients-icon {
-  fill: var(--company-color);
-}
-/* .clients-icon:hover,
-.clients-icon:focus {
-  fill: var(--color-logo-links); */
-}
-
-
 
 .team-link:hover,
 .team-link:focus {
