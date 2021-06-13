@@ -294,13 +294,21 @@ img {
   display: flex;
   justify-content: center;
 }
-.hang {
+.hang-group {
   padding-top: 94px;
 }
-.columns-icon {
-  /* width: 270px;
-  height: 120px; */
-  /* margin-bottom: 30px; */
+.columns-group {
+  display: flex;
+  justify-content: space-between;
+}
+.hang-icons {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background: var(--team-background-color);
+  border-radius: 4px;
 }
 .hang-title {
   font-family: Roboto;
@@ -448,13 +456,19 @@ img {
 .clients-item {
   display: flex;
   align-items: center;
-  border: 1px solid #afb1b8;
+  /* border: 1px solid #afb1b8; */
   box-sizing: border-box;
+  /* border-radius: 4px;
+  width: 170px;
+  height: 92px; */
 }
 .clients-link:hover,
 .clients-link:focus {
   border: 1px solid var(--color-logo-links);
   fill: var(--color-logo-links);
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
 }
 .clients-link {
   display: flex;
